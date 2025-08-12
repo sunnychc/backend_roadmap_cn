@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java学习路线图 - 原版样式中文版</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Microsoft YaHei', balsamiq, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #f5f7fa;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* SVG容器样式 */
+        #resource-svg-wrap {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 0.484;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+            font-family: 'Microsoft YaHei', balsamiq, sans-serif;
+        }
+
+        /* 节点样式 */
+        rect[fill="#fdff00"] {
+            fill: #fdff00 !important;
+            stroke: black !important;
+            stroke-width: 2.7 !important;
+        }
+
+        rect[fill="#ffe599"] {
+            fill: #ffe599 !important;
+            stroke: black !important;
+            stroke-width: 2.7 !important;
+        }
+
+        rect[fill="#ffffff"] {
+            fill: #ffffff !important;
+            stroke: #000000 !important;
+            stroke-width: 2.7 !important;
+        }
+
+        rect[fill="#4136D6"] {
+            fill: #4136D6 !important;
+            stroke: #4136D6 !important;
+            stroke-width: 2.7 !important;
+        }
+
+        rect[fill="#d1d1d1"] {
+            fill: #d1d1d1 !important;
+            stroke: #D1D1D1 !important;
+            stroke-width: 2.7 !important;
+        }
+
+        /* 文本样式 */
+        text {
+            font-family: 'Microsoft YaHei', balsamiq, sans-serif;
+        }
+
+        /* 连接线样式 */
+        path[stroke="#2b78e4"] {
+            stroke: #2b78e4 !important;
+        }
+
+        line[stroke="#2B78E4"] {
+            stroke: #2B78E4 !important;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            svg {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="resource-svg-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="679 -118 1098 2239" style="font-family: 'Microsoft YaHei', balsamiq" version="1.1">
+                <!-- 连接线 -->
+                <path d="M1243.3343015809069,61.87585799310881 C1243.3343015809069,124.92650846563109 1243.3343015809069,124.92650846563109 1243.3343015809069,187.97715893815337" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <path d="M1125.8343015809069,212.47715893815337 C1036.4980862648833,212.47715893815337 1036.4980862648833,106.97715893815337 947.1618709488599,106.97715893815337" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1125.8343015809069,212.47715893815337 C1036.4980862648833,212.47715893815337 1036.4980862648833,212.47715893815337 947.1618709488599,212.47715893815337" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1125.8343015809069,212.47715893815337 C1036.4980862648833,212.47715893815337 1036.4980862648833,265.47715893815337 947.1618709488599,265.47715893815337" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1125.8343015809069,212.47715893815337 C1036.4980862648833,212.47715893815337 1036.4980862648833,318.47715893815337 947.1618709488599,318.47715893815337" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1360.8343015809069,212.47715893815337 C1441.6840930718367,212.47715893815337 1441.6840930718367,210.88076562915717 1522.5338845627668,210.88076562915717" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1360.8343015809069,212.47715893815337 C1441.6840930718367,212.47715893815337 1441.6840930718367,263.88076562915717 1522.5338845627668,263.88076562915717" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1360.8343015809069,212.47715893815337 C1441.6840930718367,212.47715893815337 1441.6840930718367,316.88076562915717 1522.5338845627668,316.88076562915717" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1360.8343015809069,212.47715893815337 C1441.6840930718367,212.47715893815337 1441.6840930718367,157.88076562915717 1522.5338845627668,157.88076562915717" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1360.8343015809069,212.47715893815337 C1441.6840930718367,212.47715893815337 1441.6840930718367,104.88076562915717 1522.5338845627668,104.88076562915717" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1125.8343015809069,212.47715893815337 C1036.4980862648833,212.47715893815337 1036.4980862648833,159.47715893815337 947.1618709488599,159.47715893815337" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1360.8343015809069,212.47715893815337 C1441.6840930718367,212.47715893815337 1441.6840930718367,369.88076562915717 1522.5338845627668,369.88076562915717" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1243.3343015809069,236.97715893815337 C1243.3343015809069,326.6625274388637 1243.5552405844742,326.6625274388637 1243.5552405844742,416.3478959395741" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <path d="M1243.5552405844742,468.3478959395741 C1243.5552405844742,496.178200090661 1243.5552405844742,496.178200090661 1243.5552405844742,524.0085042417479" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <path d="M1322.0552405844742 442.3478959395741L1432.0552405844742 442.3478959395741L 1642.5338845627668,442.3478959395741Q 1647.5338845627668,442.3478959395741 1647.5338845627668,447.3478959395741L1647.5338845627668 500.55362472503464L1647.5338845627668 520.5536247250346" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <!-- 更多连接线 -->
+
+                <!-- 标题 -->
+                <text x="1243.3343015809069" y="27.87585799310881" text-anchor="middle" dominant-baseline="middle" font-size="28" fill="black">
+                    <tspan>Java</tspan>
+                </text>
+
+                <!-- 学习基础 -->
+                <rect x="1127.1843015809068" y="189.32715893815336" width="232.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1243.3343015809069" y="214.62715893815337" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>学习基础</tspan>
+                </text>
+
+                <!-- 左侧基础内容 -->
+                <rect x="700.51187094886" y="83.32715893815336" width="245.3" height="47.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="823.1618709488599" y="109.12715893815337" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>基础语法</tspan>
+                </text>
+
+                <rect x="700.51187094886" y="136.32715893815336" width="245.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="823.1618709488599" y="161.62715893815337" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>程序生命周期</tspan>
+                </text>
+
+                <rect x="700.51187094886" y="189.32715893815336" width="245.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="823.1618709488599" y="214.62715893815337" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>数据类型</tspan>
+                </text>
+
+                <rect x="700.51187094886" y="242.32715893815336" width="245.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="823.1618709488599" y="267.62715893815334" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>变量和作用域</tspan>
+                </text>
+
+                <rect x="700.51187094886" y="295.3271589381534" width="245.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="823.1618709488599" y="320.62715893815334" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>类型转换</tspan>
+                </text>
+
+                <!-- 右侧基础内容 -->
+                <rect x="1523.8838845627668" y="81.73076562915716" width="231.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="107.03076562915717" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>字符串和方法</tspan>
+                </text>
+
+                <rect x="1523.8838845627668" y="134.73076562915716" width="231.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="160.03076562915717" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>数学运算</tspan>
+                </text>
+
+                <rect x="1523.8838845627668" y="187.73076562915716" width="231.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="213.03076562915717" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>数组</tspan>
+                </text>
+
+                <rect x="1523.8838845627668" y="240.73076562915716" width="231.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="266.03076562915714" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>条件语句</tspan>
+                </text>
+
+                <rect x="1523.8838845627668" y="293.7307656291572" width="231.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="319.03076562915714" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>循环</tspan>
+                </text>
+
+                <rect x="1523.8838845627668" y="346.7307656291572" width="231.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="372.03076562915714" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>OOP基础</tspan>
+                </text>
+
+                <!-- 面向对象编程标题 -->
+                <text x="1243.5552405844742" y="442.3478959395741" text-anchor="middle" dominant-baseline="middle" font-size="20" fill="#000000">
+                    <tspan>面向对象编程</tspan>
+                </text>
+
+                <!-- 连接线 -->
+                <line x1="949.5073106597292" y1="442.3478959395741" x2="1169.5073106597292" y2="442.3478959395741" stroke="#2B78E4" stroke-width="3.65" stroke-linecap="round"></line>
+
+                <!-- OOP基础区域 -->
+                <rect x="702.8573106597293" y="404.6978959395741" width="246.3" height="437.3" rx="5" fill="#ffffff" stroke="#000000" stroke-width="2.7"></rect>
+
+                <!-- OOP基础标签 -->
+                <text x="772.5073106597292" y="440.3478959395741" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>OOP基础</tspan>
+                </text>
+
+                <!-- OOP基础内容 -->
+                <rect x="713.3573106597293" y="463.6978959395741" width="227.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="827.0073106597292" y="488.99789593957405" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>类和对象</tspan>
+                </text>
+
+                <rect x="713.3573106597293" y="516.6978959395741" width="227.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="827.0073106597292" y="541.997895939574" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>属性和方法</tspan>
+                </text>
+
+                <rect x="713.3573106597293" y="569.6978959395741" width="227.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="827.0073106597292" y="594.997895939574" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>访问修饰符</tspan>
+                </text>
+
+                <rect x="713.3573106597293" y="622.6978959395741" width="227.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="827.0073106597292" y="647.997895939574" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Static关键字</tspan>
+                </text>
+
+                <rect x="713.3573106597293" y="675.6978959395741" width="227.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="827.0073106597292" y="700.997895939574" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Final关键字</tspan>
+                </text>
+
+                <rect x="713.3573106597293" y="727.8725969995055" width="227.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="827.0073106597292" y="753.1725969995055" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>嵌套类</tspan>
+                </text>
+
+                <rect x="713.3573106597293" y="781.8725969995055" width="227.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="827.0073106597292" y="807.1725969995055" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>包</tspan>
+                </text>
+
+                <!-- 更多OOP内容区域 -->
+                <rect x="1019.9052405844742" y="525.3585042417479" width="447.3" height="313.3" rx="5" fill="#ffffff" stroke="#000000" stroke-width="2.7"></rect>
+
+                <text x="1180.5552405844742" y="557.5536247250346" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>更多OOP内容</tspan>
+                </text>
+
+                <!-- OOP详细内容 -->
+                <rect x="983.1843015809069" y="580.9036247250347" width="207.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1086.8343015809069" y="606.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>对象生命周期</tspan>
+                </text>
+
+                <rect x="1198.9767811847087" y="580.9036247250347" width="162.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1280.1267811847088" y="606.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>继承</tspan>
+                </text>
+
+                <rect x="1366.9767811847087" y="580.3904190441817" width="136.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1435.1267811847088" y="605.6904190441817" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>抽象</tspan>
+                </text>
+
+                <rect x="983.1843015809069" y="633.9036247250347" width="207.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1086.8343015809069" y="659.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>方法链</tspan>
+                </text>
+
+                <rect x="1198.9767811847087" y="633.9036247250347" width="161.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1279.6267811847088" y="659.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>封装</tspan>
+                </text>
+
+                <rect x="1368.31528580563" y="633.9036247250347" width="136.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1436.4652858056302" y="659.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>接口</tspan>
+                </text>
+
+                <rect x="983.1843015809069" y="686.9036247250347" width="98.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1032.3343015809069" y="712.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>枚举</tspan>
+                </text>
+
+                <rect x="1089.1843015809068" y="686.9036247250347" width="101.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1139.8343015809069" y="712.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>记录</tspan>
+                </text>
+
+                <rect x="1198.9767811847087" y="686.9036247250347" width="304.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1351.1267811847088" y="712.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>方法重载/重写</tspan>
+                </text>
+
+                <rect x="983.1843015809069" y="740.9036247250347" width="207.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1086.8343015809069" y="766.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>初始化块</tspan>
+                </text>
+
+                <rect x="1198.9767811847087" y="740.9036247250347" width="304.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1351.1267811847088" y="766.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>静态vs动态绑定</tspan>
+                </text>
+
+                <rect x="983.1843015809069" y="793.7289236651033" width="520.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1243.3343015809069" y="819.0289236651032" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>按值传递/按引用传递</tspan>
+                </text>
+
+                <!-- 右侧高级特性 -->
+                <rect x="1539.8838845627668" y="521.9036247250347" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1647.5338845627668" y="547.2036247250346" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>异常处理</tspan>
+                </text>
+
+                <rect x="1539.8838845627668" y="633.4214467697108" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1647.5338845627668" y="658.7214467697107" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Lambda表达式</tspan>
+                </text>
+
+                <rect x="1539.8838845627668" y="685.9392688143869" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1647.5338845627668" y="711.2392688143868" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>注解</tspan>
+                </text>
+
+                <rect x="1539.8838845627668" y="738.457090859063" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1647.5338845627668" y="763.7570908590629" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>模块</tspan>
+                </text>
+
+                <rect x="1539.8838845627668" y="790.9749129037391" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1647.5338845627668" y="816.274912903739" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Optional</tspan>
+                </text>
+
+                <rect x="1539.8838845627668" y="943.2099244017678" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1647.5338845627668" y="968.5099244017678" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>依赖注入</tspan>
+                </text>
+
+                <!-- 集合框架区域 -->
+                <rect x="1252.9468056892608" y="891.038197690446" width="226.3" height="319.3" rx="5" fill="#ffffff" stroke="#000000" stroke-width="2.7"></rect>
+
+                <text x="1354.3696984675892" y="922.3203519457165" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>集合</tspan>
+                </text>
+
+                <rect x="1264.719698467589" y="938.8725017715202" width="201.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1365.3696984675892" y="964.1725017715202" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Array vs ArrayList</tspan>
+                </text>
+
+                <rect x="1264.719698467589" y="991.8725017715202" width="98.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1313.8696984675892" y="1017.1725017715202" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Set</tspan>
+                </text>
+
+                <rect x="1368.6554548486342" y="991.8725017715202" width="98.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1417.8054548486343" y="1017.1725017715202" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Map</tspan>
+                </text>
+
+                <rect x="1264.719698467589" y="1044.87250177152" width="99.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1314.3696984675892" y="1070.1725017715203" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Queue</tspan>
+                </text>
+
+                <rect x="1368.6554548486342" y="1044.87250177152" width="98.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1417.8054548486343" y="1070.1725017715203" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Dequeue</tspan>
+                </text>
+
+                <rect x="1264.719698467589" y="1097.8725017715203" width="98.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1313.8696984675892" y="1123.1725017715205" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Stack</tspan>
+                </text>
+
+                <rect x="1368.6554548486342" y="1097.8725017715203" width="98.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1417.8054548486343" y="1123.1725017715205" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Iterator</tspan>
+                </text>
+
+                <rect x="1264.719698467589" y="1153.3611884486031" width="204.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1366.8696984675892" y="1178.6611884486033" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>泛型集合</tspan>
+                </text>
+
+                <!-- I/O操作 -->
+                <rect x="1539.8838845627668" y="1110.6703519457164" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1647.5338845627668" y="1135.9703519457166" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>I/O操作</tspan>
+                </text>
+
+                <rect x="1539.8838845627668" y="1163.6703519457164" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1647.5338845627668" y="1188.9703519457166" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>文件操作</tspan>
+                </text>
+
+                <!-- 并发编程 -->
+                <rect x="975.1843015809069" y="1163.6703519457164" width="215.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1082.8343015809069" y="1188.9703519457166" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>并发</tspan>
+                </text>
+
+                <rect x="975.1843015809069" y="916.6703519457166" width="215.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1082.8343015809069" y="941.9703519457165" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>volatile关键字</tspan>
+                </text>
+
+                <rect x="975.1843015809069" y="968.8725017715202" width="215.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1082.8343015809069" y="994.1725017715202" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Java内存模型</tspan>
+                </text>
+
+                <rect x="975.1843015809069" y="1021.8725017715202" width="215.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1082.8343015809069" y="1047.1725017715203" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>虚拟线程</tspan>
+                </text>
+
+                <rect x="975.1843015809069" y="1074.87250177152" width="215.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1082.8343015809069" y="1100.1725017715203" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>线程</tspan>
+                </text>
+
+                <!-- 左侧高级主题 -->
+                <rect x="703.3573106597293" y="915.6703519457166" width="219.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="813.0073106597292" y="940.9703519457165" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>密码学</tspan>
+                </text>
+
+                <rect x="702.51187094886" y="967.8725017715202" width="221.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="813.1618709488599" y="993.1725017715202" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>日期和时间</tspan>
+                </text>
+
+                <rect x="701.3573106597293" y="1020.0746515973239" width="221.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="812.0073106597292" y="1045.374651597324" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>网络编程</tspan>
+                </text>
+
+                <rect x="701.3573106597293" y="1074.87250177152" width="221.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="812.0073106597292" y="1100.1725017715203" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>正则表达式</tspan>
+                </text>
+
+                <!-- 函数式编程区域 -->
+                <rect x="704.3573106597293" y="1282.2099244017677" width="240.3" height="267.3" rx="5" fill="#ffffff" stroke="#000000" stroke-width="2.7"></rect>
+
+                <text x="721.0073106597292" y="1531.8599244017678" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>函数式编程</tspan>
+                </text>
+
+                <rect x="712.3573106597293" y="1290.2099244017677" width="224.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="824.5073106597292" y="1315.5099244017679" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>高阶函数</tspan>
+                </text>
+
+                <rect x="712.3573106597293" y="1343.2099244017677" width="224.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="824.5073106597292" y="1368.5099244017679" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>函数式接口</tspan>
+                </text>
+
+                <rect x="712.3573106597293" y="1396.2099244017677" width="224.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="824.5073106597292" y="1421.5099244017679" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>函数组合</tspan>
+                </text>
+
+                <rect x="712.3573106597293" y="1449.2099244017677" width="224.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="824.5073106597292" y="1474.5099244017679" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Stream API</tspan>
+                </text>
+
+                <!-- 构建工具 -->
+                <rect x="1008.2220474064458" y="1503.363322952089" width="178.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1097.3720474064457" y="1528.6633229520892" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>构建工具</tspan>
+                </text>
+
+                <rect x="1008.2220474064458" y="1318.5776953646334" width="178.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1097.3720474064457" y="1343.8776953646336" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Maven</tspan>
+                </text>
+
+                <rect x="1008.2220474064458" y="1371.5776953646334" width="178.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1097.3720474064457" y="1396.8776953646336" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Gradle</tspan>
+                </text>
+
+                <rect x="1008.2220474064458" y="1424.5776953646334" width="178.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1097.3720474064457" y="1449.8776953646336" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Bazel</tspan>
+                </text>
+
+                <!-- Web框架 -->
+                <rect x="1251.9999336025646" y="1502.8489519840193" width="229.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1366.6499336025647" y="1528.1489519840195" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Web框架</tspan>
+                </text>
+
+                <text x="1296.1499336025647" y="1279.4420481297732" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>推荐Spring Boot</tspan>
+                </text>
+
+                <text x="1364.1499336025647" y="1297.5598732714204" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>v</tspan>
+                </text>
+
+                <rect x="1251.9999336025646" y="1316.6094233874953" width="229.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1366.6499336025647" y="1341.9094233874955" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Spring (Spring Boot)</tspan>
+                </text>
+
+                <rect x="1251.9999336025646" y="1369.6094233874953" width="111.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1307.6499336025647" y="1394.9094233874955" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Quarkus</tspan>
+                </text>
+
+                <rect x="1369.9999336025646" y="1369.6094233874953" width="111.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1425.6499336025647" y="1394.9094233874955" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Javalin</tspan>
+                </text>
+
+                <rect x="1251.9999336025646" y="1422.6094233874953" width="229.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1366.6499336025647" y="1447.9094233874955" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Play框架</tspan>
+                </text>
+
+                <!-- 数据库访问 -->
+                <rect x="1530.3838845627668" y="1501.7099244017677" width="218.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="1527.0099244017679" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>数据库访问</tspan>
+                </text>
+
+                <rect x="1555.8838845627668" y="1260.1969443073326" width="167.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="1285.4969443073328" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>JDBC</tspan>
+                </text>
+
+                <rect x="1555.8838845627668" y="1313.1969443073326" width="167.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="1338.4969443073328" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>EBean</tspan>
+                </text>
+
+                <rect x="1555.8838845627668" y="1366.1969443073326" width="167.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="1391.4969443073328" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Hibernate</tspan>
+                </text>
+
+                <rect x="1555.8838845627668" y="1419.1969443073326" width="167.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="1444.4969443073328" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Spring Data JPA</tspan>
+                </text>
+
+                <!-- 测试 -->
+                <rect x="1302.088551984822" y="1623.1696545591994" width="118.3" height="47.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1361.2385519848222" y="1648.9696545591996" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>测试</tspan>
+                </text>
+
+                <!-- 单元测试 -->
+                <rect x="700.832369832682" y="1619.789044383481" width="143.3" height="166.3" rx="5" fill="#ffffff" stroke="#000000" stroke-width="2.7"></rect>
+
+                <text x="722.482369832682" y="1761.4390443834811" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>单元测试</tspan>
+                </text>
+
+                <rect x="713.832369832682" y="1627.789044383481" width="117.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="772.482369832682" y="1653.0890443834812" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>JUnit</tspan>
+                </text>
+
+                <rect x="713.832369832682" y="1680.789044383481" width="117.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="772.482369832682" y="1706.0890443834812" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>TestNG</tspan>
+                </text>
+
+                <!-- 集成测试 -->
+                <rect x="841.2429054677501" y="1620.9240097760007" width="184.3" height="165.3" rx="5" fill="#ffffff" stroke="#000000" stroke-width="2.7"></rect>
+
+                <text x="864.3929054677501" y="1764.5740097760008" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>集成测试</tspan>
+                </text>
+
+                <rect x="855.7429054677501" y="1628.9240097760007" width="157.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="934.3929054677501" y="1654.224009776001" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>REST Assured</tspan>
+                </text>
+
+                <rect x="855.7429054677501" y="1681.9240097760007" width="157.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="934.3929054677501" y="1707.224009776001" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>JMeter</tspan>
+                </text>
+
+                <!-- 行为测试 -->
+                <rect x="1023.6752013753893" y="1621.3659477948859" width="192.3" height="121.3" rx="5" fill="#ffffff" stroke="#000000" stroke-width="2.7"></rect>
+
+                <text x="1056.8252013753893" y="1717.015947794886" text-anchor="left" dominant-baseline="auto" font-size="17" fill="black">
+                    <tspan>行为测试</tspan>
+                </text>
+
+                <rect x="1031.6752013753892" y="1634.3659477948859" width="175.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1119.3252013753893" y="1659.665947794886" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Cucumber-JVM</tspan>
+                </text>
+
+                <rect x="1023.6752013753893" y="1739.789044383481" width="194.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1120.8252013753893" y="1765.0890443834812" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>模拟 > Mockito</tspan>
+                </text>
+
+                <!-- 日志框架 -->
+                <rect x="1530.3838845627668" y="1623.6696545591994" width="218.3" height="46.3" rx="5" fill="#fdff00" stroke="black" stroke-width="2.7"></rect>
+                <text x="1639.5338845627668" y="1648.9696545591996" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>日志框架</tspan>
+                </text>
+
+                <rect x="1533.8969679422955" y="1718.1568987197154" width="108.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1588.0469679422956" y="1743.4568987197156" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Logback</tspan>
+                </text>
+
+                <rect x="1649.5717949048953" y="1718.1568987197154" width="98.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1698.7217949048954" y="1743.4568987197156" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>Log4j2</tspan>
+                </text>
+
+                <rect x="1533.8969679422955" y="1771.1568987197154" width="108.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1588.0469679422956" y="1796.4568987197156" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>SLF4J</tspan>
+                </text>
+
+                <rect x="1649.5717949048953" y="1771.1568987197154" width="98.3" height="46.3" rx="5" fill="#ffe599" stroke="black" stroke-width="2.7"></rect>
+                <text x="1698.7217949048954" y="1796.4568987197156" text-anchor="middle" dominant-baseline="middle" font-size="17" fill="#000000">
+                    <tspan>TinyLog</tspan>
+                </text>
+
+                <!-- 连接线 -->
+                <line x1="793.0073106597292" y1="1122.3203519457165" x2="793.0073106597292" y2="1282.3203519457165" stroke="#2B78E4" stroke-width="3.6" stroke-linecap="round"></line>
+                <line x1="819.6618709488598" y1="1190.2990031143668" x2="973.6618709488598" y2="1190.2990031143668" stroke="#2B78E4" stroke-width="3.6" stroke-linecap="round"></line>
+                <line x1="819.1618709488598" y1="1121.3203519457165" x2="819.1618709488598" y2="1190.3203519457165" stroke="#2B78E4" stroke-width="3.6" stroke-linecap="round"></line>
+                <line x1="1482.3696984675892" y1="1186.8203519457165" x2="1538.3696984675892" y2="1186.8203519457165" stroke="#2B78E4" stroke-width="3.65" stroke-linecap="round"></line>
+                <line x1="945.0073106597292" y1="1525.8599244017678" x2="1008.0073106597292" y2="1525.8599244017678" stroke="#2B78E4" stroke-width="3.65" stroke-linecap="round"></line>
+                <line x1="1216.3696984675892" y1="1646.8196545591995" x2="1303.3696984675892" y2="1646.8196545591995" stroke="#2B78E4" stroke-width="3.65" stroke-linecap="round" stroke-dasharray="0.8 8"></line>
+                <line x1="1588.0469679422956" y1="1671.8131791964786" x2="1588.0469679422956" y2="1719.8131791964786" stroke="#2B78E4" stroke-width="3.65" stroke-linecap="round" stroke-dasharray="0.8 8"></line>
+                <line x1="1698.7217949048954" y1="1671.8131791964786" x2="1698.7217949048954" y2="1719.8131791964786" stroke="#2B78E4" stroke-width="3.65" stroke-linecap="round" stroke-dasharray="0.8 8"></line>
+                <line x1="1190.7508238192552" y1="1188.2990031143668" x2="1252.7508238192552" y2="1188.2990031143668" stroke="#2B78E4" stroke-width="3.65" stroke-linecap="round"></line>
+                <line x1="1648.856875320924" y1="838.2420992601204" x2="1648.856875320924" y2="940.2420992601204" stroke="#2B78E4" stroke-width="3.65" stroke-linecap="round"></line>
+
+                <!-- 更多连接路径 -->
+                <path d="M1097.3720474064457,1502.013322952089 C1097.3720474064457,1487.1205091583613 1097.3720474064457,1487.1205091583613 1097.3720474064457,1472.2276953646335" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1647.5338845627668,990.8599244017678 C1647.5338845627668,1050.0901381737422 1647.5338845627668,1050.0901381737422 1647.5338845627668,1109.3203519457165" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <path d="M1366.6499336025647,1501.4989519840194 C1366.6499336025647,1485.8791876857574 1366.6499336025647,1485.8791876857574 1366.6499336025647,1470.2594233874954" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1250.6499336025647,1525.9989519840194 C1219.2609905045051,1525.9989519840194 1219.2609905045051,1526.513322952089 1187.8720474064457,1526.513322952089" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <path d="M1082.8343015809069,1162.3203519457165 C1082.8343015809069,1142.4214268586184 1082.8343015809069,1142.4214268586184 1082.8343015809069,1122.5225017715202" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1482.6499336025647,1525.9989519840194 C1505.8419090826658,1525.9989519840194 1505.8419090826658,1524.8599244017678 1529.0338845627668,1524.8599244017678" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <path d="M1639.5338845627668,1500.3599244017678 C1639.5338845627668,1483.6034343545502 1639.5338845627668,1483.6034343545502 1639.5338845627668,1466.8469443073327" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.8 8"></path>
+                <path d="M1639.5338845627668,1549.3599244017678 C1639.5338845627668,1585.8397894804837 1639.5338845627668,1585.8397894804837 1639.5338845627668,1622.3196545591995" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <path d="M1529.0338845627668,1646.8196545591995 C1475.3862182737944,1646.8196545591995 1475.3862182737944,1646.8196545591995 1421.7385519848222,1646.8196545591995" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+                <path d="M1529.0338845627668,1646.8196545591995 C1529.0338845627668,1646.8196545591995 1529.0338845627668,1646.8196545591995 1529.0338845627668,1646.8196545591995" fill="none" stroke="#2b78e4" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0"></path>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
